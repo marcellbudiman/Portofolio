@@ -66,7 +66,7 @@ const Contact = ({ darkMode }) => {
               key={i}
               className={`w-full max-w-sm flex items-start gap-4 p-4 rounded-2xl border ${theme.infoCard} transition-all duration-300`}
             >
-              <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-500">
+              <div className="shrink-0 w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-500">
                 {item.icon}
               </div>
               <div>

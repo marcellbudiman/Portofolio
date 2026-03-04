@@ -205,7 +205,7 @@ const About = ({ darkMode }) => {
                       <ul className="flex flex-col gap-1.5">
                         {exp.detail.map((d, j) => (
                           <li key={j} className="flex items-start gap-2">
-                            <span className="mt-1.5 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-orange-400" />
+                            <span className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-orange-400" />
                             <p className={`text-xs leading-relaxed ${theme.textSecondary}`}>{d}</p>
                           </li>
                         ))}
@@ -222,7 +222,7 @@ const About = ({ darkMode }) => {
             <a
               href="#contact"
               className="inline-flex items-center px-6 py-3 rounded-full font-semibold text-sm
-              bg-gradient-to-r from-orange-500 to-amber-500 text-white
+              bg-linear-to-r from-orange-500 to-amber-500 text-white
               hover:shadow-lg hover:shadow-orange-500/30 transition-all duration-300 hover:scale-105"
             >
               Get In Touch
