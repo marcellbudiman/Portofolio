@@ -20,7 +20,7 @@ const About = ({ darkMode }) => {
       title: 'Backend Developer',
       company: 'PT. Pharos Indonesia',
       period: 'Jan 2025 – Jan 2026',
-      type: 'Internship',
+     //  type: 'Internship',
       detail: [
         'Designed and implemented scalable database models to manage high-volume data, performing query optimization to ensure maximum performance efficiency.',
         'Developed automation systems for complex data processing tasks to minimize manual intervention and accelerate operational workflows.',
@@ -34,7 +34,7 @@ const About = ({ darkMode }) => {
       title: 'Lab Instructor',
       company: 'Tarumanagara University',
       period: 'Aug 2024 – Dec 2024',
-      type: 'Part-time',
+     //  type: 'Part-time',
       subjects: 'Object Based Programming · Oracle DBA · Web Development',
       detail: [
         'Object Based Programming: Used Java as a backend to handle data processing, integrated with HTML, CSS and JavaScript to build the UI.',
@@ -46,7 +46,7 @@ const About = ({ darkMode }) => {
       title: 'Lab Instructor',
       company: 'Tarumanagara University',
       period: 'Jan 2025 – Jan 2026',
-      type: 'Part-time',
+     //  type: 'Part-time',
       subjects: 'Applied Statistics · Database Design & Management',
       detail: [
         'Applied Statistics: Assisted lecturers in teaching applied statistical methods, including data processing and statistical inference.',
@@ -190,12 +190,12 @@ const About = ({ darkMode }) => {
                             <p className={`text-xs mt-0.5 italic ${theme.textMuted}`}>{exp.subjects}</p>
                           )}
                         </div>
-                        <div className="flex flex-col items-end gap-1">
+                        {/* <div className="flex flex-col items-end gap-1">
                           <span className={`text-xs px-2.5 py-1 rounded-full font-medium ${theme.typeBadge}`}>
                             {exp.type}
                           </span>
                           <span className={`text-xs ${theme.textMuted}`}>{exp.period}</span>
-                        </div>
+                        </div> */}
                       </div>
 
                       {/* divider */}
