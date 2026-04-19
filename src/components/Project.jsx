@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Github, X, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react'
+import rumahkasihkita1 from '../assets/rumahkasihkita1.png'
+import rumahkasihkita2 from '../assets/rumahkasihkita2.png'
+import rumahkasihkita3 from '../assets/rumahkasihkita3.png'
+import rumahkasihkita4 from '../assets/rumahkasihkita4.png'
 import project1 from '../assets/project1.png'
 import project1b from '../assets/project1b.png'
 import project2 from '../assets/project2.png'
@@ -14,6 +18,20 @@ import project5d from '../assets/project5d.png'
 const projects = [
   {
     id: 1,
+    image: rumahkasihkita1,
+    images: [rumahkasihkita1, rumahkasihkita2, rumahkasihkita3, rumahkasihkita4],
+    title: 'Yayasan Rumah Kasih Kita',
+    category: 'Frontend Backend',
+    description: 'Developed a comprehensive web-based platform for an orphanage foundation featuring a public-facing portal and a robust administrative dashboard. Engineered a dynamic content management system (CMS) to handle donations, event scheduling, and real-time interaction tracking.',
+    longDescription: `Built “Rumah Kasih Kita,” a dual-sided web application designed to connect donors with the foundation while improving transparency and operational efficiency. The frontend focuses on community engagement through a responsive interface that includes a “Doa” (prayer) carousel, real-time news updates, and an activity log that documents foundation operations. It also provides a structured feedback system and a visit scheduling feature to simplify and organize public interaction with the foundation.
+    On the backend, a centralized admin dashboard was developed to manage core operational workflows. This includes a donation management system that tracks physical goods with clear status transitions such as pending, arrived, and rejected, ensuring accountability in every incoming contribution. An analytics layer was implemented to process and present key engagement metrics, including visits, prayers, and feedback, displayed through dynamic status cards for easier monitoring.
+    Additionally, a content management system was built to allow administrators to create, update, and categorize informational content such as news articles, educational posts, and success stories. A moderation workflow was also implemented to manage incoming prayers and feedback, ensuring that all public interactions remain relevant, safe, and aligned with the foundation’s objectives.`,
+    tags: ['Python', 'Django', 'Automation'],
+    github: 'https://github.com/marcellbudiman/rumahkasihkita',
+    demo: '',
+  },
+  {
+    id: 2,
     image: project1,
     images: [project1, project1b],
     title: 'Insentif',
@@ -25,7 +43,7 @@ const projects = [
     demo: '',
   },
   {
-    id: 2,
+    id: 3,
     image: project2,
     images: [project2, project2b],
     title: 'Term Of Payment',
@@ -37,7 +55,7 @@ const projects = [
     demo: '',
   },
   {
-    id: 3,
+    id: 4,
     image: project3,
     images: [project3],
     title: 'Poin Variasi Produk',
@@ -49,7 +67,7 @@ const projects = [
     demo: '',
   },
   {
-    id: 4,
+    id: 5,
     image: project4,
     images: [project4],
     title: 'Dashboard',
@@ -61,7 +79,7 @@ const projects = [
     demo: '',
   },
   {
-    id: 5,
+    id: 6,
     image: project5,
     images: [project5, project5b, project5c, project5d],
     title: 'Skripsi Itinerary Dengan Algoritma Particle Swarm Optimization',
